@@ -1,0 +1,118 @@
+\documentclass[12pt,UTF8]{ctexart}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{geometry}
+\usepackage{appendix}
+\usepackage{enumerate}
+\usepackage{threeparttable}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}%Times New Roman字体
+\usepackage{titletoc}
+\usepackage{fontspec}
+\usepackage{pdfpages}
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{amssymb}
+
+
+
+%图表目录重定义
+\renewcommand {\thetable} {\thesection{}.\arabic{table}}
+\renewcommand {\thefigure} {\thesection{}.\arabic{figure}}
+
+%\CTEXsetup[number={\chinese{section}}]{section}
+%\CTEXsetup[name={（,）},number={\chinese{subsection}}]{subsection}
+%\CTEXsetup[number={\arabic{subsubsection}}]{subsubsection}
+
+%本科学生毕业论文要求纵向打印，页边距的要求为：
+%上（T）：2 cm
+%下（B）：2 cm
+% 左（L）：1.5 cm
+% 右（R）：1.5 cm
+% 装订线（T）：0.5 cm
+% 装订线位置（T）：左
+\geometry{a4paper,left = 2cm,right = 1.5cm,top = 2cm,bottom= 2cm}
+
+
+% 页眉：学校标志（教务处主页提供下载）：
+% 高度为0.98 cm，宽度为4.13 cm，居中放置。
+% 页码采用10.5号宋体字，居中放置，格式为：第1页。
+\pagestyle{fancy}
+\lhead{}
+\chead{\includegraphics[width = 4.13cm,height = 0.98cm]{head.png}}
+\rhead{}
+\lfoot{}
+\rfoot{}
+
+\begin{document}
+
+\newcommand\dunderline[3][-1pt]{{%
+  \setbox0=\hbox{#3}
+  \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
+
+
+\begin{titlepage}
+  \vspace*{6mm}
+  \centering
+
+  \includegraphics[scale = 0.7]{nku.jpg}
+
+  \vspace*{-13mm}
+
+  \zihao{1}\textbf{\heiti{智能工业控制系统实践报告}}
+
+  \vspace{10mm}
+
+
+  \vspace{3mm}
+
+  \vspace{10mm}
+
+  \flushleft
+  
+  \begin{spacing}{1.8}
+    \hspace{35mm}\heiti\LARGE\selectfont{\textbf{年级：}\dunderline[-10pt]{1pt}{\makebox[80mm][c]{2019级}}}
+
+  \end{spacing}
+  
+  \begin{spacing}{1.8}
+
+    \hspace{35mm}\heiti\LARGE\selectfont{\textbf{学号：}\dunderline[-10pt]{1pt}{\makebox[80mm][c]{1911676}}}
+
+
+  \end{spacing}
+
+  \begin{spacing}{1.8}
+
+    \hspace{35mm}\heiti\LARGE\selectfont{\textbf{姓名：}\dunderline[-10pt]{1pt}{\makebox[80mm][c]{张晨珩}}}
+
+
+
+  \end{spacing}
+  
+  
+  \begin{spacing}{1.8}
+     \hspace{35mm}\heiti\LARGE\selectfont{\textbf{教师：}\dunderline[-10pt]{1pt}{\makebox[80mm][c]{赵铭慧}}}
+
+
+  \end{spacing}
+  
+
+
+
+  \vspace{25mm}
+
+\end{titlepage}
+
+\end{document}
